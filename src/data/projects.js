@@ -1,4 +1,5 @@
 import lifestyleAbout from '../assets/images/lifestyle-about.png';
+// import myVideo from '../assets/images/friday highlight.mp4';
 
 export const projects = [
   {
@@ -7,6 +8,7 @@ export const projects = [
     description: 'An e-commerce web app selling journals, built for a friend.',
     stack: ['React', 'Tailwind CSS'],
     image: lifestyleAbout, // path to a screenshot, add later
+    video: '',
     demo: 'https://thehabakkuk2-2.vercel.app',
     featured: true,
   },
@@ -15,7 +17,8 @@ export const projects = [
     title: 'Piratech Technologies',
     description: 'A responsive corporate website for a tech company, focused on load-time and engagement.',
     stack: ['HTML', 'CSS', 'JavaScript'],
-    image: 'piratech', // path to a screenshot, add later
+    image: 'piratech website', // path to a screenshot, add later
+    video: '',
     demo: 'https://piratechnigeria.com',
     featured: true,
   },
@@ -23,9 +26,40 @@ export const projects = [
     id: 'selah',
     title: 'Selah',
     description: 'A hobby project which involved a Bible verse and Sanint Quote generator',
+    stack: ['React.js', 'Tailwind CSS', 'PWA', 'Vercel Serverless Functions', 'Node.js'],
+    image: '',
+    video: '',
+    demo: 'https://theselah.vercel.app',
+    featured: true,
+  },
+  {
+    id: 'LMIS',
+    title: 'Labour Market Information System (LMIS)',
+    description: 'A government project aimed at providing comprehensive labor market data and insights.',
+    stack: ['React.js', 'Tailwind CSS', 'PWA', 'Node.js'],
+    image: '',
+    video: '',
+    demo: 'https://lmis.gov.ng',
+    featured: false,
+  },
+  {
+    id: 'Sunce',
+    title: 'Sunce Itel Energy',
+    description: 'A website for a solar energy company, designed to showcase their products and services.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     image: '',
-    demo: 'https://theselah.vercel.app',
+    video: '',
+    demo: 'https://sunce-itelenergy.com',
+    featured: true,
+  },
+  {
+    id: '042',
+    title: '042 Engineering Limited',
+    description: 'A tech company website built with a focus on performance and user experience.',
+    stack: ['React.js', 'Tailwind CSS', 'PWA', 'Node.js'],
+    image: '',
+    video: '',
+    demo: 'https://042nigeria.com.ng',
     featured: true,
   },
   // add the rest here as you decide featured status
