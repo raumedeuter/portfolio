@@ -9,10 +9,10 @@ export default function Contact() {
     <section id="contact" className="max-w-2xl mx-auto px-6 py-32 text-center scroll-mt-20">
       <p className="text-sm text-neutral-500 mb-3 uppercase tracking-widest">Get In Touch</p>
       <h2 className="text-3xl sm:text-5xl font-bold mb-6">
-        Feel <span className="text-accent">free</span> to reach out.
+        Let's build something <span className="text-accent">great</span>.
       </h2>
       <p className="text-neutral-600 mb-10 max-w-md mx-auto">
-        I'm currently open to new opportunities and would love to collaborate.
+        I'm currently open to new opportunities — feel free to reach out.
       </p>
 
       <a
