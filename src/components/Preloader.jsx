@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const greetings = ['Hello', 'Bonjour', 'Hola', 'Ciao', 'Hallo', 'こんにちは', 'Olá', 'Ndewo', 'Enie O', 'Ya yau', 'Salam', 'Shalom', 'Namaste', 'Sawubona', 'Obokhian', 'Abole']
+const greetings = ['Hello', 'Bonjour', 'Hola', 'Ciao', 'こんにちは', 'Ndewo', 'Enie O', 'Ya yau', 'Salam', 'Shalom', 'Namaste', 'Obokhian', 'Abole']
 
 export default function Preloader({ onFinish }) {
   const [index, setIndex] = useState(0)

@@ -1,4 +1,5 @@
 import lifestyleAbout from '../assets/images/lifestyle-about.png';
+
 // import myVideo from '../assets/images/friday highlight.mp4';
 
 export const projects = [
@@ -6,9 +7,9 @@ export const projects = [
     id: 'habakkuk',
     title: 'theHabakkuk2:2',
     description: 'An e-commerce web app selling journals, built for a friend.',
-    stack: ['React', 'Tailwind CSS'],
+    stack: ['React', 'Tailwind CSS', 'Paystack API', 'Vercel Serverless Functions', 'Node.js'],
     image: lifestyleAbout, // path to a screenshot, add later
-    video: '',
+    video: '/videos/H22.mp4',
     demo: 'https://thehabakkuk2-2.vercel.app',
     featured: true,
   },
@@ -18,7 +19,7 @@ export const projects = [
     description: 'A responsive corporate website for a tech company, focused on load-time and engagement.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     image: 'piratech website', // path to a screenshot, add later
-    video: '',
+    video: '/videos/piratech.mp4',
     demo: 'https://piratechnigeria.com',
     featured: true,
   },
@@ -28,7 +29,7 @@ export const projects = [
     description: 'A hobby project which involved a Bible verse and Sanint Quote generator',
     stack: ['React.js', 'Tailwind CSS', 'PWA', 'Vercel Serverless Functions', 'Node.js'],
     image: '',
-    video: '',
+    video: '/videos/selah.mp4',
     demo: 'https://theselah.vercel.app',
     featured: true,
   },
@@ -60,7 +61,7 @@ export const projects = [
     image: '',
     video: '',
     demo: 'https://042nigeria.com.ng',
-    featured: true,
+    featured: false,
   },
   // add the rest here as you decide featured status
 ]
