@@ -23,10 +23,12 @@ export default function Hero() {
         </a>
         <a
           href="/resume.pdf"
-          download
+          external:true
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block border border-neutral-900 rounded-full px-6 py-3 text-sm font-medium hover:bg-neutral-900 hover:text-white transition-colors"
         >
-          Download Resume
+          My Resume
         </a>
       </div>
     </section>

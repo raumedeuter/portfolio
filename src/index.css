@@ -8,3 +8,9 @@
     animation-duration: 0.01ms !important;
   }
 }
+/* index.css — add this utility */
+.dot-grid {
+  background-image: radial-gradient(circle, #0F6E56 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.3;
+}

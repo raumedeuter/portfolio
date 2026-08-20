@@ -121,43 +121,50 @@ export default function Experience() {
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
-    <section id="experience" className="max-w-3xl mx-auto px-6 py-24">
-      <h2 className="text-2xl font-bold mb-8">Experience</h2>
+    <section id="experience" className="bg-neutral-50 scroll-mt-20">
+      <div className="max-w-3xl mx-auto px-6 py-24">
+        <h2 className="text-2xl font-bold mb-8">Experience</h2>
 
-      {/* Desktop — existing centered alternating timeline, untouched */}
-      <div className="hidden sm:block relative max-w-3xl mx-auto">
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-neutral-200" />
-        <div className="space-y-16">
-          {experience.map((job, index) => {
-            const isEven = index % 2 === 0;
-            const Icon = job.type === "education" ? GraduationCap : Briefcase;
+        {/* Desktop — existing centered alternating timeline, untouched */}
+        <div className="hidden sm:block relative max-w-3xl mx-auto">
+          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-neutral-200" />
+          <div className="space-y-16">
+            {experience.map((job, index) => {
+              const isEven = index % 2 === 0;
+              const Icon = job.type === "education" ? GraduationCap : Briefcase;
 
-            return (
-              <div
-                key={job.role}
-                className={`group relative flex ${isEven ? "flex-row" : "flex-row-reverse"} items-center gap-6 rounded-lg transition-colors hover:bg-neutral-50 p-4 -m-4`}
-              >
-                <div className="absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center z-10 transition-all duration-300 group-hover:bg-accent group-hover:scale-110">
-                  <Icon className="w-5 h-5 text-white transition-transform duration-300" />
-                </div>
-
+              return (
                 <div
-                  className={`w-1/2 ${isEven ? "pr-12 text-right" : "pl-12"}`}
+                  key={job.role}
+                  className={`group relative flex ${isEven ? "flex-row" : "flex-row-reverse"} items-center gap-6 rounded-lg transition-colors hover:bg-white p-4 -m-4`}
                 >
-                  <h3 className="font-semibold">{job.role}</h3>
-                  <p className="text-sm text-neutral-500 mb-1">{job.company}</p>
-                  <p className="text-neutral-600 text-sm">{job.description}</p>
-                </div>
+                  <div className="absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center z-10 transition-all duration-300 group-hover:bg-accent group-hover:scale-110">
+                    <Icon className="w-5 h-5 text-white transition-transform duration-300" />
+                  </div>
 
-                <div
-                  className={`w-1/2 flex items-center ${isEven ? "pl-12 justify-start" : "pr-12 justify-end"}`}
-                >
-                  <span className="text-sm text-neutral-500">{job.period}</span>
+                  <div
+                    className={`w-1/2 ${isEven ? "pr-12 text-right" : "pl-12"}`}
+                  >
+                    <h3 className="font-semibold">{job.role}</h3>
+                    <p className="text-sm text-neutral-500 mb-1">
+                      {job.company}
+                    </p>
+                    <p className="text-neutral-600 text-sm">
+                      {job.description}
+                    </p>
+                  </div>
+
+                  <div
+                    className={`w-1/2 flex items-center ${isEven ? "pl-12 justify-start" : "pr-12 justify-end"}`}
+                  >
+                    <span className="text-sm text-neutral-500">
+                      {job.period}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
       </div>
 
       {/* Mobile — left-aligned line, dots, content to the right, no overlap */}
@@ -241,6 +248,7 @@ export default function Experience() {
           </a>
         ))}
       </div>
+       </div>
     </section>
   );
 }

@@ -65,5 +65,8 @@ export const projects = [
     demo: 'https://042nigeria.com.ng',
     featured: false,
   },
+  {
+
+  },
   // add the rest here as you decide featured status
 ]

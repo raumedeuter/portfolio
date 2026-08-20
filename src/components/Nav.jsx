@@ -93,7 +93,7 @@ export default function Nav() {
     <>
       <header className="w-full">
         <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-          <a href="#hero" className="font-semibold tracking-tight">
+          <a href="#hero" className="text-lg font-semibold tracking-tight">
             Michael B.
           </a>
 
@@ -104,13 +104,21 @@ export default function Nav() {
           </ul>
 
           <button
-            onClick={() => setMenuOpen(true)}
-            className="sm:hidden relative w-8 h-6 flex flex-col justify-between focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
-            aria-label="Open menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            className="sm:hidden fixed top-6 right-6 z-50 w-12 h-12 rounded-full bg-neutral-900 flex items-center justify-center shadow-lg hover:bg-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            <span className="h-0.5 w-6 bg-neutral-900" />
-            <span className="h-0.5 w-4 bg-neutral-900 self-end" />
-            <span className="h-0.5 w-6 bg-neutral-900" />
+            <div className="relative w-6 h-5 flex flex-col justify-between">
+              <span
+                className={`h-0.5 bg-white transition-all duration-300 ${menuOpen ? "w-6 rotate-45 translate-y-2" : "w-6"}`}
+              />
+              <span
+                className={`h-0.5 bg-white transition-all duration-300 ${menuOpen ? "w-0 opacity-0" : "w-4 self-end"}`}
+              />
+              <span
+                className={`h-0.5 bg-white transition-all duration-300 ${menuOpen ? "w-6 -rotate-45 -translate-y-2" : "w-6"}`}
+              />
+            </div>
           </button>
         </div>
       </header>
