@@ -1,7 +1,9 @@
 const socials = [
-  { name: 'GitHub', url: 'https://github.com/Raumedeuter', icon: '/icons/social/github.svg' },
-  { name: 'LinkedIn', url: 'http://www.linkedin.com/in/michael-ben-ikheloah-a3324b2a7', icon: '/icons/social/linkedin.svg' },
-  { name: 'Instagram', url: 'https://instagram.com/YOUR_HANDLE', icon: '/icons/social/instagram.svg' }, // add your real handle
+  { name: 'GitHub', url: 'https://github.com/Raumedeuter', icon: '/icons/github.svg' },
+  { name: 'LinkedIn', url: 'http://www.linkedin.com/in/michael-ben-ikheloah-a3324b2a7', icon: '/icons/linkedin.svg' },
+  { name: 'Instagram', url: 'https://instagram.com/YOUR_HANDLE', icon: '/icons/instagram.svg' }, // add your real handle
+  { name: 'Twitter', url: 'https://twitter.com/YOUR_HANDLE', icon: '/icons/twitter x.svg' }, // add your real handle
+  { name: 'Substack', url: 'https://facebook.com/YOUR_HANDLE', icon: '/icons/substack.svg' }, // add your real handle
 ]
 
 export default function Contact() {
@@ -12,12 +14,12 @@ export default function Contact() {
         Let's build something <span className="text-accent">great</span>.
       </h2>
       <p className="text-neutral-600 mb-10 max-w-md mx-auto">
-        I'm currently open to new opportunities — feel free to reach out.
+        I'm currently open to new opportunities — feel free to reach out so we can collaborate.
       </p>
 
       <a
         href="mailto:mikeeben10@gmail.com"
-        className="group inline-flex items-center gap-2 text-lg font-medium border-b-2 border-neutral-900 pb-1 hover:border-accent hover:text-accent transition-colors mb-16"
+        className="group inline-flex items-center gap-2 text-lg font-medium hover:border-accent hover:text-accent transition-colors mb-16"
       >
         mikeeben10@gmail.com
         <span className="transition-transform group-hover:translate-x-1">→</span>

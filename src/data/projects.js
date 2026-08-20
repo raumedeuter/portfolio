@@ -1,4 +1,3 @@
-import lifestyleAbout from '../assets/images/lifestyle-about.png';
 
 // import myVideo from '../assets/images/friday highlight.mp4';
 
@@ -6,9 +5,10 @@ export const projects = [
   {
     id: 'habakkuk',
     title: 'theHabakkuk2:2',
+    github: 'https://github.com/Raumedeuter/theHabakkuk2-2',
     description: 'An e-commerce web app selling journals, built for a friend.',
     stack: ['React', 'Tailwind CSS', 'Paystack API', 'Vercel Serverless Functions', 'Node.js'],
-    image: lifestyleAbout, // path to a screenshot, add later
+    image: 'thehabakuk website', // path to a screenshot, add later
     video: '/videos/H22.mp4',
     demo: 'https://thehabakkuk2-2.vercel.app',
     featured: true,
@@ -16,6 +16,7 @@ export const projects = [
   {
     id: 'piratech',
     title: 'Piratech Technologies',
+    github: '',
     description: 'A responsive corporate website for a tech company, focused on load-time and engagement.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     image: 'piratech website', // path to a screenshot, add later
@@ -26,6 +27,7 @@ export const projects = [
     {
     id: 'selah',
     title: 'Selah',
+    github: 'https://github.com/raumedeuter/selah.git',
     description: 'A hobby project which involved a Bible verse and Sanint Quote generator',
     stack: ['React.js', 'Tailwind CSS', 'PWA', 'Vercel Serverless Functions', 'Node.js'],
     image: '',
