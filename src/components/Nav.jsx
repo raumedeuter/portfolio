@@ -58,10 +58,19 @@ export default function Nav() {
   }, []);
 
   function renderLink(link, extraClass = "") {
+    if (link.label === "Resume" && !extraClass.includes("mobile")) {
+      // Desktop: distinct pill button (unchanged from before)
+      return (
+      <a href={link.href} target="_blank" rel="noopener noreferrer" className="inline-block border border-neutral-900 rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 hover:bg-neutral-900 hover:text-white">
+  Resume
+</a>
+      );
+    }
+
     const content = (
       <>
         <span
-          className={`w-2.5 h-2.5 rounded-full bg-accent transition-opacity ${
+          className={`w-1.5 h-1.5 rounded-full bg-accent transition-opacity ${
             activeSection === link.href ? "opacity-100" : "opacity-0"
           }`}
         />
@@ -93,11 +102,11 @@ export default function Nav() {
     <>
       <header className="w-full">
         <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-          <a href="#hero" className="text-lg font-semibold tracking-tight">
+          <a href="#hero" className="text-md font-medium tracking-tight">
             Michael B.
           </a>
 
-          <ul className="hidden sm:flex gap-6 text-sm">
+          <ul className="hidden md:flex item-center gap-6 text-md font-medium">
             {links.map((link) => (
               <li key={link.href}>{renderLink(link)}</li>
             ))}

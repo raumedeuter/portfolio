@@ -38,6 +38,7 @@ export const projects = [
   {
     id: 'LMIS',
     title: 'Labour Market Information System (LMIS)',
+    github: '',
     description: 'A government project aimed at providing comprehensive labor market data and insights.',
     stack: ['React.js', 'Tailwind CSS', 'PWA', 'Node.js'],
     image: '',
@@ -48,6 +49,7 @@ export const projects = [
   {
     id: 'Sunce',
     title: 'Sunce Itel Energy',
+    github: '',
     description: 'A website for a solar energy company, designed to showcase their products and services.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     image: '',
@@ -58,15 +60,13 @@ export const projects = [
   {
     id: '042',
     title: '042 Engineering Limited',
+    github: '',
     description: 'A tech company website built with a focus on performance and user experience.',
     stack: ['React.js', 'Tailwind CSS', 'PWA', 'Node.js'],
     image: '',
     video: '',
     demo: 'https://042nigeria.com.ng',
     featured: false,
-  },
-  {
-
   },
   // add the rest here as you decide featured status
 ]

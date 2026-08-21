@@ -1,8 +1,11 @@
+import Reveal from './Reveal'
+
 export default function About() {
   return (
     <section id="about" className="bg-neutral-50 scroll-mt-20">
       <div className="max-w-3xl mx-auto px-6 py-24">
-        <h2 className="text-2xl font-bold mb-8">About</h2>
+        <Reveal><h2 className="text-2xl font-bold mb-8">About</h2></Reveal>
+        <Reveal delay={100}>
         <div className="text-neutral-600 leading-relaxed space-y-4">
           <p>
             I'm a Computer Engineering graduate from Afe Babalola University,
@@ -26,6 +29,7 @@ export default function About() {
             how they work, how they can break, and how to make them better.
           </p>
         </div>
+      </Reveal>
       </div>
     </section>
   );

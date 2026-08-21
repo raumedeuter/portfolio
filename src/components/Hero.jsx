@@ -15,21 +15,12 @@ export default function Hero() {
         a growing focus on clean, thoughtful frontend engineering.
       </p>
       <div className="flex flex-wrap gap-4 mt-6">
-        <a
-          href="#projects"
-          className="inline-block bg-neutral-900 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-accent transition-colors"
-        >
-          View My Work
-        </a>
-        <a
-          href="/resume.pdf"
-          external:true
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block border border-neutral-900 rounded-full px-6 py-3 text-sm font-medium hover:bg-neutral-900 hover:text-white transition-colors"
-        >
-          My Resume
-        </a>
+       <a href="#projects" className="inline-block bg-neutral-900 text-white rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md hover:bg-accent active:translate-y-0">
+  View My Work
+</a>
+       <a href="/resume.pdf" download className="inline-block border border-neutral-900 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-neutral-900 hover:text-white">
+  Download Resume
+</a>
       </div>
     </section>
   );

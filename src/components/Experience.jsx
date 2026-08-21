@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Briefcase, GraduationCap, Award } from "lucide-react";
+import Reveal from "./Reveal";
 
 const experience = [
   {
@@ -123,7 +124,7 @@ export default function Experience() {
   return (
     <section id="experience" className="bg-neutral-50 scroll-mt-20">
       <div className="max-w-3xl mx-auto px-6 py-24">
-        <h2 className="text-2xl font-bold mb-8">Experience</h2>
+        <Reveal><h2 className="text-2xl font-bold mb-8">Experience</h2></Reveal>
 
         {/* Desktop — existing centered alternating timeline, untouched */}
         <div className="hidden sm:block relative max-w-3xl mx-auto">
@@ -134,7 +135,7 @@ export default function Experience() {
               const Icon = job.type === "education" ? GraduationCap : Briefcase;
 
               return (
-                <div
+                <Reveal
                   key={job.role}
                   className={`group relative flex ${isEven ? "flex-row" : "flex-row-reverse"} items-center gap-6 rounded-lg transition-colors hover:bg-white p-4 -m-4`}
                 >
@@ -161,7 +162,7 @@ export default function Experience() {
                       {job.period}
                     </span>
                   </div>
-                </div>
+                </Reveal>
               );
             })}
           </div>
@@ -174,7 +175,7 @@ export default function Experience() {
           {experience.map((job) => {
             const Icon = job.type === "education" ? GraduationCap : Briefcase;
             return (
-              <div
+              <Reveal
                 key={job.role}
                 className="group relative pl-10 rounded-lg transition-colors hover:bg-neutral-50 p-4 -ml-4"
               >
@@ -186,14 +187,14 @@ export default function Experience() {
                   {job.company} · {job.period}
                 </p>
                 <p className="text-neutral-600 text-sm">{job.description}</p>
-              </div>
+              </Reveal>
             );
           })}
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold mb-8 mt-24">Skills</h2>
-
+      <Reveal><h2 className="text-2xl font-bold mb-8 mt-24">Skills</h2></Reveal>
+        <Reveal delay={100}>
       <div className="flex gap-2 mb-8 border-b border-neutral-200 overflow-x-auto">
         {categories.map((category) => (
           <button
@@ -225,12 +226,13 @@ export default function Experience() {
           </div>
         ))}
       </div>
+      </Reveal>
 
-      <h2 className="text-2xl font-bold mb-8">Certifications</h2>
+      <Reveal><h2 className="text-2xl font-bold mb-8">Certifications</h2></Reveal>
       <div className="grid sm:grid-cols-2 gap-4">
         {certifications.map((cert) => (
-          <a
-            key={cert.name}
+          <Reveal key={cert.name}>
+            <a
             href={cert.file}
             target="_blank"
             rel="noopener noreferrer"
@@ -246,6 +248,7 @@ export default function Experience() {
               <p className="text-sm text-neutral-500 mt-1">{cert.issuer}</p>
             </div>
           </a>
+          </Reveal>
         ))}
       </div>
        </div>
